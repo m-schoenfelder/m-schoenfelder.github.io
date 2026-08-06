@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Trip Planner — Trip Invitation</title>
+  <title>PlanPackGo — Trip Invitation</title>
   <style>
     body {
       font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
@@ -51,15 +51,15 @@
 <body>
   <div class="card">
     <h1>You've been invited to a trip</h1>
-    <p>Trip Planner lets you follow a trip's destinations and itinerary. If you already
+    <p>PlanPackGo lets you follow a trip's destinations and itinerary. If you already
        have the app, open the invitation; otherwise download it free.</p>
-    <a class="button" id="accept" style="display:none">Open in Trip Planner</a>
+    <a class="button" id="accept" style="display:none">Open in PlanPackGo</a>
     <a class="button secondary" id="download"
-       href="https://apps.apple.com/app/id0000000000">Download Trip Planner</a>
+       href="https://apps.apple.com/app/id6798339688">Download PlanPackGo</a>
   </div>
   <script>
     // The QR wraps the raw iCloud CKShare URL as ?url=<encoded>. When it's present, expose
-    // an "Open in Trip Planner" action pointing at that raw link — on a device with the app
+    // an "Open in PlanPackGo" action pointing at that raw link — on a device with the app
     // installed (CKSharingSupported), iOS shows the native accept sheet and routes into the
     // app. Recipients without it fall through to the download button.
     var shareURL = new URLSearchParams(window.location.search).get("url");
